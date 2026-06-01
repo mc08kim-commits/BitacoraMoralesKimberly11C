@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="recursos/img/logo_azulito.png">
+
+    <title>Bitácora Kimberly Morales</title>
+
+    <style>
+        /* ===== ESTILOS GENERALES ===== */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f4ff;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* ===== HEADER ===== */
+
+        header {
+            padding: 30px;
+            background-color: rgb(213, 192, 255);
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+
+            /* efecto neón */
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #bc13fe,
+                0 0 30px #bc13fe;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        /* ===== CONTENIDO PRINCIPAL ===== */
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* ===== TARJETAS ===== */
+
+        .semana {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: left;
+
+            border-left: 10px solid #d97cd1;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 8px 25px rgba(188, 19, 254, 0.25);
+        }
+
+        .semana h2 {
+            margin-top: 0;
+            color: #8a2be2;
+            font-size: 1.8rem;
+        }
+
+        .semana p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* ===== PDF ===== */
+
+        .contenedor-pdf {
+            margin-top: 20px;
+            border-radius: 12px;
+            border: 3px solid #d97cd1;
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 50px;
+
+            background-color: rgb(200, 136, 206);
+            border-top: 10px solid #d97cd1;
+
+            color: white;
+        }
+
+        .logo-colegio {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo-colegio:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+
+    <header>
+        <h1>Mi Bitácora Digital</h1>
+        <p>Kimberly Morales</p>
+    </header>
+
+    <!-- ===== CONTENIDO ===== -->
+
+    <main>
+
+        <!-- SEMANA 1 -->
+
+        <div class="semana">
+
+            <h2>Semana 1: Estructura y Semántica</h2>
+
+            <p>
+                En esta primera etapa aprendí a organizar una página web
+                utilizando etiquetas HTML5. Descubrí la importancia del orden
+                para que los navegadores entiendan mi contenido.
+            </p>
+
+            <iframe
+                src="recursos/documento/Introduccion arduino, Kimberly Morales.pdf#toolbar=0"
+                class="contenedor-pdf"
+                width="100%"
+                height="500px">
+            </iframe>
+
+        </div>
+
+        <!-- SEMANA 2 -->
+
+        <div class="semana">
+
+            <h2>Semana 2: Box Model</h2>
+
+            <p>
+                Entendiendo el margen, relleno y bordes de los elementos.
+            </p>
+
+        </div>
+
+        <!-- SEMANA 3 -->
+
+        <div class="semana">
+
+            <h2>Semana 3: El poder de CSS</h2>
+
+            <p>
+                Hoy trabajamos con sombras neón, transiciones suaves
+                y el diseño de tarjetas. Mi sitio pasó de ser texto plano
+                a tener un estilo moderno y dinámico.
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+
+        <span>@kimi</span>
+
+        <img
+            src="https://www.capouilliez.edu.gt/assets/img/logo.png"
+            class="logo-colegio"
+            height="70"
+            width="170"
+            alt="Logo Colegio">
+
+    </footer>
+
+</body>
+
+</html>
